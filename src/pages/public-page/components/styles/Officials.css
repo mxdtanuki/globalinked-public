@@ -1,0 +1,205 @@
+/* Officials Section */
+.officials {
+  padding: 5rem 0 6rem;
+  background: linear-gradient(180deg, #fafafa 0%, #f5f0f0 50%, #fafafa 100%);
+  scroll-margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.officials::before,
+.officials::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(130, 22, 22, 0.2),
+    transparent
+  );
+}
+
+.officials::before {
+  top: 0;
+}
+
+.officials::after {
+  bottom: 0;
+}
+
+/* Section Title */
+#officials .section-title {
+  font-family: "Trajan Pro", serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #821616;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+#officials .section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #821616;
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.officials-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+
+.officials-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.officials-row.top .official-card,
+.officials-row.bottom .official-card {
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+/* Card */
+.official-card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.official-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Official Photo (Portrait) */
+.official-image {
+  width: 140px;
+  height: 200px;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid #821616;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.official-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info */
+.official-info h3 {
+  font-size: 1.05rem;
+  color: #4a1d1d;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.official-info p {
+  color: #712929;
+  font-size: 0.92rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Animation */
+.official-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.official-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.official-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.official-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.official-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.official-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.official-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.official-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .officials {
+    padding: 3rem 0;
+  }
+
+  .official-card {
+    padding: 1.25rem;
+  }
+
+  .official-image {
+    width: 120px;
+    height: 170px;
+  }
+
+  .official-info h3 {
+    font-size: 1rem;
+  }
+
+  .official-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .officials-grid {
+    gap: 2rem;
+  }
+
+  .official-image {
+    width: 100px;
+    height: 150px;
+  }
+
+  .official-card {
+    max-width: 90%;
+  }
+}
