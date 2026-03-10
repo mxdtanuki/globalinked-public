@@ -12,7 +12,7 @@ export const registerUser = async (userData) => {
         reject({
           response: {
             data: {
-              detail: "Email and password are required"
+              detail: "Email and password are required."
             }
           }
         });
