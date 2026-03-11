@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/globalinked-public/static/css/main.df6886c4.css",
+    "main.js": "/globalinked-public/static/js/main.41dd0309.js",
+    "static/media/OIA_Cynthia C. Trinidad.jpg": "/globalinked-public/static/media/OIA_Cynthia C. Trinidad.b0b6e1cf449a470994ea.jpg",
+    "static/media/OIA_Christoper F. Sasot (1).jpg": "/globalinked-public/static/media/OIA_Christoper F. Sasot (1).e56201798127280f7927.jpg",
+    "static/media/OIA_Felicitas C. Trinidad (1).jpg": "/globalinked-public/static/media/OIA_Felicitas C. Trinidad (1).65a0b3d6e47d0898b3a5.jpg",
+    "static/media/OIA_Marianne P. Enguerra (2).jpg": "/globalinked-public/static/media/OIA_Marianne P. Enguerra (2).606fd05f7393ec32c333.jpg",
+    "static/media/OIA_Rochelle S. Murao (2).jpg": "/globalinked-public/static/media/OIA_Rochelle S. Murao (2).549730e262e3adfd3d4a.jpg",
+    "static/media/OIA_P3.jpg": "/globalinked-public/static/media/OIA_P3.35baf60202a0183ad5b5.jpg",
+    "static/media/OIA_P4.jpg": "/globalinked-public/static/media/OIA_P4.003c33ea5595bb23de82.jpg",
+    "static/media/OIA_P2.jpg": "/globalinked-public/static/media/OIA_P2.a1535f0ac9b503e9c52d.jpg",
+    "static/media/OIA_P1.jpg": "/globalinked-public/static/media/OIA_P1.67d3116dac484fe62493.jpg",
+    "static/media/pup-main-building.jpg": "/globalinked-public/static/media/pup-main-building.d1b2191d6ea6ff979df4.jpg",
+    "static/media/TrajanPro-Regular.ttf": "/globalinked-public/static/media/TrajanPro-Regular.5e3d3ff4f80f0875f849.ttf",
+    "static/media/logo.png": "/globalinked-public/static/media/logo.6aa132608305d6f84d6b.png",
+    "static/media/IMG_2031.JPG": "/globalinked-public/static/media/IMG_2031.8454d2359b5f8ab8243c.JPG",
+    "static/media/Sir Nicky.jpg": "/globalinked-public/static/media/Sir Nicky.f23dcd1c2d4a0b131bc4.jpg",
+    "static/media/577342267___n.jpg": "/globalinked-public/static/media/577342267_1281755067312027_5041505358784559960_n.c4c477730a0343acb184.jpg",
+    "static/media/PlayfairDisplay-Regular.ttf": "/globalinked-public/static/media/PlayfairDisplay-Regular.d3b07de1b5f762d72daa.ttf",
+    "static/media/TrajanPro-Bold.otf": "/globalinked-public/static/media/TrajanPro-Bold.3f14e0ffe7b54e407289.otf",
+    "static/media/facebook.png": "/globalinked-public/static/media/facebook.790642551cd99bb66a7e.png",
+    "static/media/global-map.png": "/globalinked-public/static/media/global-map.11b9bb3ccbbccc41cfb8.png",
+    "static/media/conference.png": "/globalinked-public/static/media/conference.9eaf9cea4dc20f255b6a.png",
+    "static/media/collaboration.png": "/globalinked-public/static/media/collaboration.39cac9d13a8fe16caa08.png",
+    "static/media/feedback.png": "/globalinked-public/static/media/feedback.d5d45085802fa121b45d.png",
+    "static/media/trophy.png": "/globalinked-public/static/media/trophy.86c3674a538ed5febba2.png",
+    "static/media/Info-icon.png": "/globalinked-public/static/media/Info-icon.1ae3dcf978056a69f0e9.png",
+    "static/media/passport.png": "/globalinked-public/static/media/passport.f105afe9cd94ac87f8eb.png",
+    "index.html": "/globalinked-public/index.html",
+    "main.df6886c4.css.map": "/globalinked-public/static/css/main.df6886c4.css.map",
+    "main.41dd0309.js.map": "/globalinked-public/static/js/main.41dd0309.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df6886c4.css",
+    "static/js/main.41dd0309.js"
+  ]
+}
