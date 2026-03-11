@@ -2,7 +2,7 @@
   "name": "globalinked-system-public",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://mxdtanuki.github.io/globalinked-frontend-for-public-page-only",
+  "homepage": "https://mxdtanuki.github.io/globalinked-public",
   "description": "GlobalInked System - Public Facing Application",
   "dependencies": {
     "@tanstack/react-query": "^5.17.0",

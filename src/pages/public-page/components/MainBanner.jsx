@@ -260,12 +260,12 @@ export default function MainBanner() {
   const [slideshowImages] = useState(defaultSlideshowImages);
 
   const services = [
-    { icon: <FaUserGraduate />, title: "International Exchange Students" },
-    { icon: <FaGlobe />, title: "International Seminars/Fora" },
-    { icon: <FaBookOpen />, title: "International Scholarship Grants" },
-    { icon: <FaChalkboardTeacher />, title: "International Faculty Exchange" },
-    { icon: <FaHandshake />, title: "International Organizations Affiliation" },
-    { icon: <FaLink />, title: "International Linkages" },
+    { icon: FaUserGraduate, title: "International Exchange Students" },
+    { icon: FaGlobe, title: "International Seminars/Fora" },
+    { icon: FaBookOpen, title: "International Scholarship Grants" },
+    { icon: FaChalkboardTeacher, title: "International Faculty Exchange" },
+    { icon: FaHandshake, title: "International Organizations Affiliation" },
+    { icon: FaLink, title: "International Linkages" },
   ];
 
   useEffect(() => {
@@ -273,7 +273,7 @@ export default function MainBanner() {
       try {
         const agreements = await agreementService.getPublicAgreements();
         const activeAgreements = agreements.filter(
-          (ag) => ag.agreement_status === "Active"
+          (ag) => ag.agreement_status === "Active",
         );
 
         const countriesSet = new Set();
@@ -292,7 +292,7 @@ export default function MainBanner() {
           // Use partner name as key to avoid duplicates
           if (nameField) {
             partnersMap.set(nameField, {
-              logo: logoField || '',
+              logo: logoField || "",
               name: nameField,
               country: ag.country || "Unknown",
             });
@@ -310,7 +310,7 @@ export default function MainBanner() {
         setFlags(
           partnerFlags.length > 0
             ? partnerFlags
-            : [{ country: "Philippines", flag: "https://flagcdn.com/ph.svg" }]
+            : [{ country: "Philippines", flag: "https://flagcdn.com/ph.svg" }],
         );
 
         const logos = Array.from(partnersMap.values());
@@ -391,12 +391,12 @@ export default function MainBanner() {
   };
 
   const tocLinks = [
-    { label: "About Us", target: "#about-hero-edge", icon: <FiInfo /> },
-    { label: "Objectives & Functions", target: "#objectives", icon: <FiTarget /> },
-    { label: "Services", target: "#services", icon: <FiLayers /> },
-    { label: "FAQ", target: "#faq", icon: <FiHelpCircle /> },
-    { label: "Officials & Staff", target: "#officials", icon: <FiUsers /> },
-    { label: "Contact", target: "#contact", icon: <FiMail /> },
+    { label: "About Us", target: "#about-hero-edge", icon: FiInfo },
+    { label: "Objectives & Functions", target: "#objectives", icon: FiTarget },
+    { label: "Services", target: "#services", icon: FiLayers },
+    { label: "FAQ", target: "#faq", icon: FiHelpCircle },
+    { label: "Officials & Staff", target: "#officials", icon: FiUsers },
+    { label: "Contact", target: "#contact", icon: FiMail },
   ];
 
   const scrollToTarget = (selector) => {
@@ -429,17 +429,22 @@ export default function MainBanner() {
               tocOnLightBg ? "oia-toc-menu--light" : "oia-toc-menu--dark"
             }`}
           >
-            {tocLinks.map((item) => (
-              <button
-                key={item.target}
-                type="button"
-                className="oia-toc-link"
-                onClick={() => scrollToTarget(item.target)}
-              >
-                <span className="oia-toc-link-icon">{item.icon}</span>
-                <span className="oia-toc-link-text">{item.label}</span>
-              </button>
-            ))}
+            {tocLinks.map((item) => {
+              const Icon = item.icon;
+              return (
+                <button
+                  key={item.target}
+                  type="button"
+                  className="oia-toc-link"
+                  onClick={() => scrollToTarget(item.target)}
+                >
+                  <span className="oia-toc-link-icon">
+                    <Icon />
+                  </span>
+                  <span className="oia-toc-link-text">{item.label}</span>
+                </button>
+              );
+            })}
           </div>
         )}
       </div>
@@ -521,11 +526,7 @@ export default function MainBanner() {
                   <span className="oia-poly-line">1st PolytechnicU</span>
                 </div>
                 <div className="oia-wuri-badge">
-                  <a
-                    href={wuriLogo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={wuriLogo} target="_blank" rel="noopener noreferrer">
                     <img
                       src={wuriLogo}
                       alt="WURI Logo"
@@ -555,7 +556,7 @@ export default function MainBanner() {
                     className="oia-carousel-arrow oia-carousel-arrow--left"
                     onClick={() =>
                       setCurrentFlagIndex((prev) =>
-                        prev === 0 ? flags.length - 1 : prev - 1
+                        prev === 0 ? flags.length - 1 : prev - 1,
                       )
                     }
                     aria-label="Previous countries"
@@ -639,12 +640,17 @@ export default function MainBanner() {
                 <div className="oia-title-underline oia-title-underline--left" />
               </div>
               <div className="oia-services-list">
-                {services.map((service, index) => (
-                  <div key={index} className="oia-service-item">
-                    <span className="oia-service-icon">{service.icon}</span>
-                    <span className="oia-service-title">{service.title}</span>
-                  </div>
-                ))}
+                {services.map((service, index) => {
+                  const Icon = service.icon;
+                  return (
+                    <div key={index} className="oia-service-item">
+                      <span className="oia-service-icon">
+                        <Icon />
+                      </span>
+                      <span className="oia-service-title">{service.title}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -666,7 +672,7 @@ export default function MainBanner() {
                 onClick={() => {
                   setIsTransitioning(true);
                   setCurrentPartnerIndex((prev) =>
-                    prev === 0 ? partnerLogos.length - 1 : prev - 1
+                    prev === 0 ? partnerLogos.length - 1 : prev - 1,
                   );
                 }}
                 aria-label="Previous institutions"
@@ -695,8 +701,12 @@ export default function MainBanner() {
                           alt={partner.name}
                           className="oia-partner-logo"
                           onError={(e) => {
-                            e.target.style.display = 'none';
-                            e.target.parentElement.innerHTML = `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: bold; font-size: 24px; border-radius: 8px;">${partner.name.split(' ').map(w => w[0]).join('').slice(0, 2)}</div>`;
+                            e.target.style.display = "none";
+                            e.target.parentElement.innerHTML = `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: bold; font-size: 24px; border-radius: 8px;">${partner.name
+                              .split(" ")
+                              .map((w) => w[0])
+                              .join("")
+                              .slice(0, 2)}</div>`;
                           }}
                         />
                       </div>

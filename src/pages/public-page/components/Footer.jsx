@@ -8,16 +8,6 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleFacultyLinkClick = (e) => {
-    e.preventDefault();
-    
-    if (location.pathname === '/faculty-login') {
-      window.scrollTo({ top: 0, behavior: 'instant' });
-    } else {
-      navigate('/faculty-login');
-    }
-  };
-
   const handleScrollLinkClick = (e, targetId) => {
     e.preventDefault();
     if (location.pathname !== "/") {
@@ -67,27 +57,47 @@ const Footer = () => {
             <h4 className="footer-section-title">Quick Links</h4>
             <ul className="footer-links">
               <li>
-                <a href="/#objectives" className="footer-link" onClick={(e) => handleScrollLinkClick(e, "#objectives")}>
+                <a
+                  href="/#objectives"
+                  className="footer-link"
+                  onClick={(e) => handleScrollLinkClick(e, "#objectives")}
+                >
                   Objective and Functions
                 </a>
               </li>
               <li>
-                <a href="/#services" className="footer-link" onClick={(e) => handleScrollLinkClick(e, "#services")}>
+                <a
+                  href="/#services"
+                  className="footer-link"
+                  onClick={(e) => handleScrollLinkClick(e, "#services")}
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="/#faq" className="footer-link" onClick={(e) => handleScrollLinkClick(e, "#faq")}>
+                <a
+                  href="/#faq"
+                  className="footer-link"
+                  onClick={(e) => handleScrollLinkClick(e, "#faq")}
+                >
                   Frequently Asked Questions
                 </a>
               </li>
               <li>
-                <a href="/#officials" className="footer-link" onClick={(e) => handleScrollLinkClick(e, "#officials")}>
+                <a
+                  href="/#officials"
+                  className="footer-link"
+                  onClick={(e) => handleScrollLinkClick(e, "#officials")}
+                >
                   Officials and Staff
                 </a>
               </li>
               <li>
-                <a href="/#contact" className="footer-link" onClick={(e) => handleScrollLinkClick(e, "#contact")}>
+                <a
+                  href="/#contact"
+                  className="footer-link"
+                  onClick={(e) => handleScrollLinkClick(e, "#contact")}
+                >
                   Contact Information
                 </a>
               </li>
@@ -114,13 +124,9 @@ const Footer = () => {
             <h4 className="footer-section-title">Faculty</h4>
             <ul className="footer-links">
               <li>
-                <a 
-                  href="/faculty-login" 
-                  className="footer-link"
-                  onClick={handleFacultyLinkClick}
-                >
+                <Link to="/faculty-login" className="footer-link">
                   Globalinked
-                </a>
+                </Link>
               </li>
             </ul>
 
