@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/globalinked-public/static/css/main.df6886c4.css",
-    "main.js": "/globalinked-public/static/js/main.41dd0309.js",
+    "main.js": "/globalinked-public/static/js/main.ce35cb2f.js",
     "static/media/OIA_Cynthia C. Trinidad.jpg": "/globalinked-public/static/media/OIA_Cynthia C. Trinidad.b0b6e1cf449a470994ea.jpg",
     "static/media/OIA_Christoper F. Sasot (1).jpg": "/globalinked-public/static/media/OIA_Christoper F. Sasot (1).e56201798127280f7927.jpg",
     "static/media/OIA_Felicitas C. Trinidad (1).jpg": "/globalinked-public/static/media/OIA_Felicitas C. Trinidad (1).65a0b3d6e47d0898b3a5.jpg",
@@ -29,10 +29,10 @@
     "static/media/passport.png": "/globalinked-public/static/media/passport.f105afe9cd94ac87f8eb.png",
     "index.html": "/globalinked-public/index.html",
     "main.df6886c4.css.map": "/globalinked-public/static/css/main.df6886c4.css.map",
-    "main.41dd0309.js.map": "/globalinked-public/static/js/main.41dd0309.js.map"
+    "main.ce35cb2f.js.map": "/globalinked-public/static/js/main.ce35cb2f.js.map"
   },
   "entrypoints": [
     "static/css/main.df6886c4.css",
-    "static/js/main.41dd0309.js"
+    "static/js/main.ce35cb2f.js"
   ]
 }
